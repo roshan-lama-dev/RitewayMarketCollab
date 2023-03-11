@@ -3,49 +3,13 @@ import { MainLayout } from "../layout/MainLayout";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import { useDispatch } from "react-redux";
-import { setNameList } from "../nameslice";
+import Products from "./Products";
 export const HomePage = () => {
-  const dispatch = useDispatch();
-  const [formName, setFormName] = useState({});
-  const handleOnChange = (e) => {
-    const { name, value } = e.target;
-
-    setFormName({
-      ...formName,
-      [name]: value,
-    });
-  };
-  console.log(formName);
-  const handleOnSubmit = (e) => {
-    e.preventDefault();
-    dispatch(setNameList(formName));
-  };
+ 
+ 
   return (
     <MainLayout>
-      <nav class="navbar">
-        <a href="#" class="logo">
-          Riteway Food Service
-        </a>
-        <ul class="nav-links">
-          <li>
-            <a href="#about-us">About Us</a>
-          </li>
-          <li>
-            <a href="#products">Products</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#contact">Contact Us</a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
+     
       <Carousel className="homecarousel">
         <Carousel.Item>
           <Row className="">
@@ -89,25 +53,13 @@ export const HomePage = () => {
         </Carousel.Item> */}
       </Carousel>
 
-      <section class="hero">
-        <div class="hero-background">
-          <img
-            src="https://images.unsplash.com/photo-1547637205-fde0c9011f9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt="Fresh produce header image"
-          />
-        </div>
-        <div class="hero-content">
-          <h1>Your One-Stop-Shop for Quality Fresh Foods and Catering Needs</h1>
-          <p>
-            At Riteway Food Service, we deliver the freshest and highest quality
-            products right to your doorstep. Shop now to experience the
-            difference.
-          </p>
-          <a href="#" class="btn-primary">
-            Shop Now
-          </a>
-        </div>
-      </section>
+     
+
+{/* products */}
+
+<Products/>
+
+
       <section class="section-1">
         <div class="section-1-content">
           <h2>About Us</h2>
@@ -172,21 +124,7 @@ export const HomePage = () => {
         </div>
       </section>
 
-      <section className="p-5">
-        <h1>Contact Us</h1>
-        <Form.Group>
-          <Form onSubmit={handleOnSubmit}>
-            <Form.Label>Name</Form.Label>
-            <Form.Control
-              placeholder="Name"
-              required
-              onChange={handleOnChange}
-              name="name"
-            ></Form.Control>
-            <Button type="submit">Send</Button>
-          </Form>
-        </Form.Group>
-      </section>
+    
       <footer>
         <div class="footer-content">
           <div class="logo">

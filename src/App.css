@@ -94,7 +94,7 @@
 
 .btn-primary {
   display: inline-block;
-  background-color: #004225;
+  background-color: #178841;
   color: white;
   padding: 1rem 2rem;
   border-radius: 4px;
@@ -103,7 +103,8 @@
 }
 
 .btn-primary:hover {
-  background-color: #8bc34a;
+  background-color: #86da27;
+  cursor: pointer;
 }
 .section-1 {
   display: flex;
@@ -336,3 +337,5 @@ footer {
   font-size: 1.2rem;
   margin: 0;
 }
+
+
