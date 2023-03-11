@@ -19,7 +19,7 @@ export const HomePage = () => {
         </Carousel.Item>
         <Carousel.Item>
           <Row className="">
-            <Col className="bgFirstCarousel">jeiohjsif</Col>
+            <Col className="bgSecondCarousel">jeiohjsif</Col>
             <Col className="d-flex flex-column align-items-center justify-content-center introheader">
               <h3>Welcome to Riteway Food Service</h3>
               <p>Your one-stop-shop for all your catering needs</p>
@@ -84,7 +84,10 @@ export const HomePage = () => {
             </p>
           </div>
           <div class="product-item">
-            <img src="product-3.jpg" alt="Product 3" />
+            <img
+              src="https://images.unsplash.com/photo-1573246123716-6b1782bfc499?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80"
+              alt="Product 3"
+            />
             <h3>Product 3</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
@@ -92,7 +95,10 @@ export const HomePage = () => {
             </p>
           </div>
           <div class="product-item">
-            <img src="product-4.jpg" alt="Product 4" />
+            <img
+              src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="Product 4"
+            />
             <h3>Product 4</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
