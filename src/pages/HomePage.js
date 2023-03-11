@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { MainLayout } from "../layout/MainLayout";
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-import { useDispatch } from "react-redux";
 import Products from "./Products";
 export const HomePage = () => {
  
