@@ -1,11 +1,49 @@
 /* main */
 .main {
   min-height: 73vh;
+  margin-top: 150px;
+}
+
+/* navbar */
+.navigation {
+  /* background: red; */
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  /* border-bottom: 1px solid #00422563; */
+}
+
+.headerlink {
+  color: #004225;
+}
+
+.headerlink:hover {
+  border-bottom: black;
+}
+
+/* carousel */
+
+.introheader {
+  background: #004225;
+}
+
+.introheader h3 {
+  text-transform: uppercase;
+  margin-bottom: 55px;
 }
 
 /* heroSection */
 .herosection {
   min-height: 73vh;
+}
+
+/* products */
+
+.product-item {
+  border-radius: 12px 22px 32px 42px;
+  box-shadow: 5px 10px #004225;
 }
 
 /* Home Page */
@@ -16,6 +54,13 @@
   color: white;
   height: 500px;
   width: auto;
+}
+
+/* span line */
+.list {
+  background-color: #004225;
+  width: 50%;
+  display: flex;
 }
 
 /* footer */
@@ -119,7 +164,6 @@
 
 .section-1-content h2 {
   font-size: 3rem;
-  margin-bottom: 2rem;
 }
 
 .section-1-content p {
@@ -335,4 +379,8 @@ footer {
 .footer-bottom p {
   font-size: 1.2rem;
   margin: 0;
+}
+
+.product-item img {
+  border-radius: 15px 15px 0px 0px;
 }

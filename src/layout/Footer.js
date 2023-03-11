@@ -13,9 +13,9 @@ export const Footer = () => {
                 <h1 className="text-white text-align-start">Riteway</h1>
               </div>
               <div className="topButton d-flex justify-content-flex-end">
-                <Button variant="info">
+                <div className="btn-primary">
                   Back to top<i className="fa-solid fa-arrow-up"></i>
-                </Button>
+                </div>
               </div>
             </div>
           </Container>
